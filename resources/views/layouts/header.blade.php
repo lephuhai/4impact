@@ -307,37 +307,42 @@
                 <li class="dropdown dropdown-user dropdown-dark">
                     <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
                         <img alt="" class="img-circle" src="/assets/layouts/layout3/img/avatar.png">
-                        <span class="username username-hide-mobile">Nick</span>
+                        <span class="username username-hide-mobile">{{ Auth::user()->getAuthIdentifier() }}</span>
                     </a>
                     <ul class="dropdown-menu dropdown-menu-default">
                         <li>
-                            <a href="page_user_profile_1.html">
+                            <a href="#">
                                 <i class="icon-user"></i> My Profile </a>
                         </li>
                         <li>
-                            <a href="app_calendar.html">
+                            <a href="#">
                                 <i class="icon-calendar"></i> My Calendar </a>
                         </li>
                         <li>
-                            <a href="app_inbox.html">
+                            <a href="#">
                                 <i class="icon-envelope-open"></i> My Inbox
                                 <span class="badge badge-danger"> 3 </span>
                             </a>
                         </li>
                         <li>
-                            <a href="app_todo_2.html">
+                            <a href="#">
                                 <i class="icon-rocket"></i> My Tasks
                                 <span class="badge badge-success"> 7 </span>
                             </a>
                         </li>
                         <li class="divider"> </li>
                         <li>
-                            <a href="page_user_lock_1.html">
+                            <a href="#">
                                 <i class="icon-lock"></i> Lock Screen </a>
                         </li>
                         <li>
-                            <a href="page_user_login_1.html">
+                            <a href="{{ route('logout') }}" onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
                                 <i class="icon-key"></i> Log Out </a>
+
+                            <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                {{ csrf_field() }}
+                            </form>
                         </li>
                     </ul>
                 </li>
