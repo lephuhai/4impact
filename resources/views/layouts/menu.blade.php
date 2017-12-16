@@ -42,7 +42,7 @@
                     </ul>
                 </li>
                 <li class="menu-dropdown mega-menu-dropdown  ">
-                    <a href="javascript:;"> UI Features
+                    <a href="javascript:;"> Research
                         <span class="arrow"></span>
                     </a>
                     <ul class="dropdown-menu" style="min-width: 710px">
@@ -160,7 +160,7 @@
                     </ul>
                 </li>
                 <li class="menu-dropdown classic-menu-dropdown">
-                    <a href="javascript:;"> Layouts
+                    <a href="javascript:;"> Development
                         <span class="arrow"></span>
                     </a>
                     <ul class="dropdown-menu pull-left">
@@ -188,7 +188,7 @@
                     </ul>
                 </li>
                 <li class="menu-dropdown mega-menu-dropdown  mega-menu-full">
-                    <a href="javascript:;"> Components
+                    <a href="javascript:;"> Toools
                         <span class="arrow"></span>
                     </a>
                     <ul class="dropdown-menu" style="min-width: ">
@@ -198,91 +198,55 @@
                                     <div class="col-md-3">
                                         <ul class="mega-menu-submenu">
                                             <li>
-                                                <h3>Components 1</h3>
+                                                <h3>Online Research</h3>
                                             </li>
                                             <li>
-                                                <a href="components_date_time_pickers.html"> Date & Time Pickers </a>
+                                                <a href="#"> GitHub profile</a>
                                             </li>
                                             <li>
-                                                <a href="components_color_pickers.html"> Color Pickers </a>
-                                            </li>
-                                            <li>
-                                                <a href="components_select2.html"> Select2 Dropdowns </a>
-                                            </li>
-                                            <li>
-                                                <a href="components_bootstrap_multiselect_dropdown.html"> Bootstrap Multiselect Dropdowns </a>
-                                            </li>
-                                            <li>
-                                                <a href="components_bootstrap_select.html"> Bootstrap Select </a>
-                                            </li>
-                                            <li>
-                                                <a href="components_multi_select.html"> Bootstrap Multiple Select </a>
+                                                <a href="#"> Facebook All in One </a>
                                             </li>
                                         </ul>
                                     </div>
                                     <div class="col-md-3">
                                         <ul class="mega-menu-submenu">
                                             <li>
-                                                <h3>Components 2</h3>
+                                                <h3>Image Forensic</h3>
                                             </li>
                                             <li>
-                                                <a href="components_bootstrap_select_splitter.html"> Select Splitter </a>
-                                            </li>
-                                            <li>
-                                                <a href="components_clipboard.html"> Clipboard </a>
-                                            </li>
-                                            <li>
-                                                <a href="components_typeahead.html"> Typeahead Autocomplete </a>
-                                            </li>
-                                            <li>
-                                                <a href="components_bootstrap_tagsinput.html"> Bootstrap Tagsinput </a>
-                                            </li>
-                                            <li>
-                                                <a href="components_bootstrap_switch.html"> Bootstrap Switch </a>
-                                            </li>
-                                            <li>
-                                                <a href="components_bootstrap_maxlength.html"> Bootstrap Maxlength </a>
+                                                <a href="#"> RGB analytics</a>
                                             </li>
                                         </ul>
                                     </div>
                                     <div class="col-md-3">
                                         <ul class="mega-menu-submenu">
                                             <li>
-                                                <h3>Components 3</h3>
+                                                <h3>Reverse Engineering</h3>
                                             </li>
                                             <li>
-                                                <a href="components_bootstrap_fileinput.html"> Bootstrap File Input </a>
+                                                <a href="#"> Software </a>
                                             </li>
                                             <li>
-                                                <a href="components_bootstrap_touchspin.html"> Bootstrap Touchspin </a>
+                                                <a href="#"> Malware analytics </a>
                                             </li>
                                             <li>
-                                                <a href="components_form_tools.html"> Form Widgets & Tools </a>
+                                                <a href="#"> Binary </a>
                                             </li>
                                             <li>
-                                                <a href="components_context_menu.html"> Context Menu </a>
-                                            </li>
-                                            <li>
-                                                <a href="components_editors.html"> Markdown & WYSIWYG Editors </a>
+                                                <a href="#"> CTF </a>
                                             </li>
                                         </ul>
                                     </div>
                                     <div class="col-md-3">
                                         <ul class="mega-menu-submenu">
                                             <li>
-                                                <h3>Components 4</h3>
+                                                <h3>OWASP</h3>
                                             </li>
                                             <li>
-                                                <a href="components_code_editors.html"> Code Editors </a>
+                                                <a href="#"> XSS </a>
                                             </li>
                                             <li>
-                                                <a href="components_ion_sliders.html"> Ion Range Sliders </a>
-                                            </li>
-                                            <li>
-                                                <a href="components_noui_sliders.html"> NoUI Range Sliders </a>
-                                            </li>
-                                            <li>
-                                                <a href="components_knob_dials.html"> Knob Circle Dials </a>
+                                                <a href="#"> CSRF </a>
                                             </li>
                                         </ul>
                                     </div>

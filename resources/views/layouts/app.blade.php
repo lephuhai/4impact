@@ -63,7 +63,7 @@
                         <div class="container-fluid">
                             <!-- BEGIN PAGE TITLE -->
                             <div class="page-title">
-                                <h1>Fixed Mega Menu </h1>
+                                <h1>Machine Worker </h1>
                             </div>
                             <!-- END PAGE TITLE -->
                             <!-- BEGIN PAGE TOOLBAR -->
