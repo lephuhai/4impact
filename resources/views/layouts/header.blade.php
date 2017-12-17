@@ -4,7 +4,7 @@
         <!-- BEGIN LOGO -->
         <div class="page-logo">
             <a href="{{ route('dashboard.index') }}">
-                <img src="/assets/layouts/layout3/img/logo.png" alt="logo" class="logo-default">
+                <img src="/assets/layouts/layout3/img/logo-radar.png" alt="logo" class="logo-default">
             </a>
         </div>
         <!-- END LOGO -->

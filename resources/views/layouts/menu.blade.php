@@ -201,7 +201,7 @@
                                                 <h3>Online Research</h3>
                                             </li>
                                             <li>
-                                                <a href="#"> GitHub profile</a>
+                                                <a href="{{ route('github.search') }}"> GitHub profile</a>
                                             </li>
                                             <li>
                                                 <a href="#"> Facebook All in One </a>

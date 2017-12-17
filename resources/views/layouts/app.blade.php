@@ -28,7 +28,12 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <link rel="icon" href="/favicon.ico" type="image/x-icon"/>
-    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon"/>
+
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+    <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+
 
     <title>{{ config('app.name', '4Impact') }}</title>
 
@@ -60,6 +65,9 @@
                     <!-- BEGIN CONTENT BODY -->
                     <!-- BEGIN PAGE HEAD-->
                     <div class="page-head">
+
+                        <img id="nyancat" src="/img/nyancat.gif" alt="Nyancat Runner">
+
                         <div class="container-fluid">
                             <!-- BEGIN PAGE TITLE -->
                             <div class="page-title">
@@ -265,6 +273,8 @@
 <script src="/assets/layouts/layout3/scripts/layout.min.js" type="text/javascript"></script>
 <script src="/assets/layouts/global/scripts/quick-nav.min.js" type="text/javascript"></script>
 <!-- END THEME LAYOUT SCRIPTS -->
+
+<script src="/assets/global/scripts/base.components.min.js"></script>
 
     <!-- Scripts -->
     {{--<script src="{{ asset('js/app.js') }}"></script>--}}

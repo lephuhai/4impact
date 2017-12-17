@@ -11,3 +11,4 @@ npm-debug.log
 yarn-error.log
 *.min.min.js
 *.min.min.css
+/bower_components/

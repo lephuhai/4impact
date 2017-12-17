@@ -5,3 +5,8 @@
     background-image: url(/img/beyeu.jpg);
     background-size: cover;
 }
+
+#nyancat {
+    position: absolute;
+    height: 60px;
+}

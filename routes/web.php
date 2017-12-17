@@ -21,6 +21,12 @@ Route::group(['middleware' => ['auth']], function () {
 
     Route::get('dashboard', 'DashboardController@index')->name('dashboard.index');
 
+    Route::group(['prefix' => 'github'], function () {
+
+        Route::any('search', 'GitHubController@search')->name('github.search');
+
+    });
+
 });
 
 Route::get('/home', 'HomeController@index')->name('home');

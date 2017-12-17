@@ -4,7 +4,7 @@
         <div class="row">
             <div class="col-md-3 col-sm-6 col-xs-12 footer-block">
                 <h2>About</h2>
-                <p> Không thấy máu không vui, không nhạc buồn. </p>
+                <p> Không thấy máu không vui, không nhạc đời nhạt. </p>
             </div>
             <div class="col-md-3 col-sm-6 col-xs12 footer-block">
                 <h2>Subscribe Email</h2>
