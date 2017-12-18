@@ -27,6 +27,11 @@ Route::group(['middleware' => ['auth']], function () {
 
     });
 
+    Route::group(['prefix' => 'zk'], function () {
+
+        Route::get('fight', 'ZKSoftware@fight')->name('zk.fight');
+        Route::get('attendance', 'ZKSoftware@attendance')->name('zk.attendance');
+    });
 });
 
 Route::get('/home', 'HomeController@index')->name('home');

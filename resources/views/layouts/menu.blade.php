@@ -43,7 +43,7 @@
                 </li>
                 <li class="menu-dropdown mega-menu-dropdown  ">
                     <a href="javascript:;"> Research
-                        <span class="arrow"></span>
+                        <i class="fa fa-angle-down"></i>
                     </a>
                     <ul class="dropdown-menu" style="min-width: 710px">
                         <li>
@@ -161,7 +161,7 @@
                 </li>
                 <li class="menu-dropdown classic-menu-dropdown">
                     <a href="javascript:;"> Development
-                        <span class="arrow"></span>
+                        <i class="fa fa-angle-down"></i>
                     </a>
                     <ul class="dropdown-menu pull-left">
                         <li class=" ">
@@ -170,26 +170,11 @@
                         <li class=" ">
                             <a href="layout_top_bar_light.html" class="nav-link  "> Light Top Bar Dropdowns </a>
                         </li>
-                        <li class=" ">
-                            <a href="layout_fluid_page.html" class="nav-link  "> Fluid Page </a>
-                        </li>
-                        <li class=" ">
-                            <a href="layout_top_bar_fixed.html" class="nav-link  "> Fixed Top Bar </a>
-                        </li>
-                        <li class=" active">
-                            <a href="layout_mega_menu_fixed.html" class="nav-link  active"> Fixed Mega Menu </a>
-                        </li>
-                        <li class=" ">
-                            <a href="layout_disabled_menu.html" class="nav-link  "> Disabled Menu Links </a>
-                        </li>
-                        <li class=" ">
-                            <a href="layout_blank_page.html" class="nav-link  "> Blank Page </a>
-                        </li>
                     </ul>
                 </li>
                 <li class="menu-dropdown mega-menu-dropdown  mega-menu-full">
                     <a href="javascript:;"> Toools
-                        <span class="arrow"></span>
+                        <i class="fa fa-angle-down"></i>
                     </a>
                     <ul class="dropdown-menu" style="min-width: ">
                         <li>
@@ -257,7 +242,7 @@
                 </li>
                 <li class="menu-dropdown classic-menu-dropdown ">
                     <a href="javascript:;"> More
-                        <span class="arrow"></span>
+                        <i class="fa fa-angle-down"></i>
                     </a>
                     <ul class="dropdown-menu pull-left">
                         <li class="dropdown-submenu ">
@@ -365,326 +350,11 @@
                                 </li>
                             </ul>
                         </li>
-                        <li class="dropdown-submenu ">
-                            <a href="?p=" class="nav-link nav-toggle ">
-                                <i class="icon-wallet"></i> Portlets
-                                <span class="arrow"></span>
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li class=" ">
-                                    <a href="portlet_boxed.html" class="nav-link "> Boxed Portlets </a>
-                                </li>
-                                <li class=" ">
-                                    <a href="portlet_light.html" class="nav-link "> Light Portlets </a>
-                                </li>
-                                <li class=" ">
-                                    <a href="portlet_solid.html" class="nav-link "> Solid Portlets </a>
-                                </li>
-                                <li class=" ">
-                                    <a href="portlet_ajax.html" class="nav-link "> Ajax Portlets </a>
-                                </li>
-                                <li class=" ">
-                                    <a href="portlet_draggable.html" class="nav-link "> Draggable Portlets </a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="dropdown-submenu ">
-                            <a href="?p=" class="nav-link nav-toggle ">
-                                <i class="icon-settings"></i> Elements
-                                <span class="arrow"></span>
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li class=" ">
-                                    <a href="elements_steps.html" class="nav-link "> Steps </a>
-                                </li>
-                                <li class=" ">
-                                    <a href="elements_lists.html" class="nav-link "> Lists </a>
-                                </li>
-                                <li class=" ">
-                                    <a href="elements_ribbons.html" class="nav-link "> Ribbons </a>
-                                </li>
-                                <li class=" ">
-                                    <a href="elements_overlay.html" class="nav-link "> Overlays </a>
-                                </li>
-                                <li class=" ">
-                                    <a href="elements_cards.html" class="nav-link "> User Cards </a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="dropdown-submenu ">
-                            <a href="javascript:;" class="nav-link nav-toggle ">
-                                <i class="icon-bar-chart"></i> Charts
-                                <span class="arrow"></span>
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li class=" ">
-                                    <a href="charts_amcharts.html" class="nav-link "> amChart </a>
-                                </li>
-                                <li class=" ">
-                                    <a href="charts_flotcharts.html" class="nav-link "> Flot Charts </a>
-                                </li>
-                                <li class=" ">
-                                    <a href="charts_flowchart.html" class="nav-link "> Flow Charts </a>
-                                </li>
-                                <li class=" ">
-                                    <a href="charts_google.html" class="nav-link "> Google Charts </a>
-                                </li>
-                                <li class=" ">
-                                    <a href="charts_echarts.html" class="nav-link "> eCharts </a>
-                                </li>
-                                <li class=" ">
-                                    <a href="charts_morris.html" class="nav-link "> Morris Charts </a>
-                                </li>
-                                <li class="dropdown-submenu ">
-                                    <a href="javascript:;" class="nav-link nav-toggle"> HighCharts
-                                        <span class="arrow"></span>
-                                    </a>
-                                    <ul class="dropdown-menu">
-                                        <li class="">
-                                            <a href="charts_highcharts.html" class="nav-link " target="_blank"> HighCharts </a>
-                                        </li>
-                                        <li class="">
-                                            <a href="charts_highstock.html" class="nav-link " target="_blank"> HighStock </a>
-                                        </li>
-                                        <li class="">
-                                            <a href="charts_highmaps.html" class="nav-link " target="_blank"> HighMaps </a>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
                     </ul>
                 </li>
-                <li class="menu-dropdown classic-menu-dropdown ">
-                    <a href="javascript:;">
-                        <i class="icon-briefcase"></i> Pages
-                        <span class="arrow"></span>
-                    </a>
-                    <ul class="dropdown-menu pull-left">
-                        <li class="dropdown-submenu ">
-                            <a href="javascript:;" class="nav-link nav-toggle ">
-                                <i class="icon-basket"></i> eCommerce
-                                <span class="arrow"></span>
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li class=" ">
-                                    <a href="ecommerce_index.html" class="nav-link ">
-                                        <i class="icon-home"></i> Dashboard </a>
-                                </li>
-                                <li class=" ">
-                                    <a href="ecommerce_orders.html" class="nav-link ">
-                                        <i class="icon-basket"></i> Orders </a>
-                                </li>
-                                <li class=" ">
-                                    <a href="ecommerce_orders_view.html" class="nav-link ">
-                                        <i class="icon-tag"></i> Order View </a>
-                                </li>
-                                <li class=" ">
-                                    <a href="ecommerce_products.html" class="nav-link ">
-                                        <i class="icon-graph"></i> Products </a>
-                                </li>
-                                <li class=" ">
-                                    <a href="ecommerce_products_edit.html" class="nav-link ">
-                                        <i class="icon-graph"></i> Product Edit </a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="dropdown-submenu ">
-                            <a href="javascript:;" class="nav-link nav-toggle ">
-                                <i class="icon-docs"></i> Apps
-                                <span class="arrow"></span>
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li class=" ">
-                                    <a href="app_todo.html" class="nav-link ">
-                                        <i class="icon-clock"></i> Todo 1 </a>
-                                </li>
-                                <li class=" ">
-                                    <a href="app_todo_2.html" class="nav-link ">
-                                        <i class="icon-check"></i> Todo 2 </a>
-                                </li>
-                                <li class=" ">
-                                    <a href="app_inbox.html" class="nav-link ">
-                                        <i class="icon-envelope"></i> Inbox </a>
-                                </li>
-                                <li class=" ">
-                                    <a href="app_calendar.html" class="nav-link ">
-                                        <i class="icon-calendar"></i> Calendar </a>
-                                </li>
-                                <li class=" ">
-                                    <a href="app_ticket.html" class="nav-link ">
-                                        <i class="icon-notebook"></i> Support </a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="dropdown-submenu ">
-                            <a href="javascript:;" class="nav-link nav-toggle ">
-                                <i class="icon-user"></i> User
-                                <span class="arrow"></span>
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li class=" ">
-                                    <a href="page_user_profile_1.html" class="nav-link ">
-                                        <i class="icon-user"></i> Profile 1 </a>
-                                </li>
-                                <li class=" ">
-                                    <a href="page_user_profile_1_account.html" class="nav-link ">
-                                        <i class="icon-user-female"></i> Profile 1 Account </a>
-                                </li>
-                                <li class=" ">
-                                    <a href="page_user_profile_1_help.html" class="nav-link ">
-                                        <i class="icon-user-following"></i> Profile 1 Help </a>
-                                </li>
-                                <li class=" ">
-                                    <a href="page_user_profile_2.html" class="nav-link ">
-                                        <i class="icon-users"></i> Profile 2 </a>
-                                </li>
-                                <li class="dropdown-submenu ">
-                                    <a href="javascript:;" class="nav-link nav-toggle">
-                                        <i class="icon-notebook"></i> Login
-                                        <span class="arrow"></span>
-                                    </a>
-                                    <ul class="dropdown-menu">
-                                        <li class="">
-                                            <a href="page_user_login_1.html" class="nav-link " target="_blank"> Login Page 1 </a>
-                                        </li>
-                                        <li class="">
-                                            <a href="page_user_login_2.html" class="nav-link " target="_blank"> Login Page 2 </a>
-                                        </li>
-                                        <li class="">
-                                            <a href="page_user_login_3.html" class="nav-link " target="_blank"> Login Page 3 </a>
-                                        </li>
-                                        <li class="">
-                                            <a href="page_user_login_4.html" class="nav-link " target="_blank"> Login Page 4 </a>
-                                        </li>
-                                        <li class="">
-                                            <a href="page_user_login_5.html" class="nav-link " target="_blank"> Login Page 5 </a>
-                                        </li>
-                                        <li class="">
-                                            <a href="page_user_login_6.html" class="nav-link " target="_blank"> Login Page 6 </a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li class=" ">
-                                    <a href="page_user_lock_1.html" class="nav-link " target="_blank">
-                                        <i class="icon-lock"></i> Lock Screen 1 </a>
-                                </li>
-                                <li class=" ">
-                                    <a href="page_user_lock_2.html" class="nav-link " target="_blank">
-                                        <i class="icon-lock-open"></i> Lock Screen 2 </a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="dropdown-submenu ">
-                            <a href="javascript:;" class="nav-link nav-toggle ">
-                                <i class="icon-social-dribbble"></i> General
-                                <span class="arrow"></span>
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li class=" ">
-                                    <a href="page_general_about.html" class="nav-link ">
-                                        <i class="icon-info"></i> About </a>
-                                </li>
-                                <li class=" ">
-                                    <a href="page_general_contact.html" class="nav-link ">
-                                        <i class="icon-call-end"></i> Contact </a>
-                                </li>
-                                <li class="dropdown-submenu ">
-                                    <a href="javascript:;" class="nav-link nav-toggle">
-                                        <i class="icon-notebook"></i> Portfolio
-                                        <span class="arrow"></span>
-                                    </a>
-                                    <ul class="dropdown-menu">
-                                        <li class="">
-                                            <a href="page_general_portfolio_1.html" class="nav-link "> Portfolio 1 </a>
-                                        </li>
-                                        <li class="">
-                                            <a href="page_general_portfolio_2.html" class="nav-link "> Portfolio 2 </a>
-                                        </li>
-                                        <li class="">
-                                            <a href="page_general_portfolio_3.html" class="nav-link "> Portfolio 3 </a>
-                                        </li>
-                                        <li class="">
-                                            <a href="page_general_portfolio_4.html" class="nav-link "> Portfolio 4 </a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li class="dropdown-submenu ">
-                                    <a href="javascript:;" class="nav-link nav-toggle">
-                                        <i class="icon-magnifier"></i> Search
-                                        <span class="arrow"></span>
-                                    </a>
-                                    <ul class="dropdown-menu">
-                                        <li class="">
-                                            <a href="page_general_search.html" class="nav-link "> Search 1 </a>
-                                        </li>
-                                        <li class="">
-                                            <a href="page_general_search_2.html" class="nav-link "> Search 2 </a>
-                                        </li>
-                                        <li class="">
-                                            <a href="page_general_search_3.html" class="nav-link "> Search 3 </a>
-                                        </li>
-                                        <li class="">
-                                            <a href="page_general_search_4.html" class="nav-link "> Search 4 </a>
-                                        </li>
-                                        <li class="">
-                                            <a href="page_general_search_5.html" class="nav-link "> Search 5 </a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li class=" ">
-                                    <a href="page_general_pricing.html" class="nav-link ">
-                                        <i class="icon-tag"></i> Pricing </a>
-                                </li>
-                                <li class=" ">
-                                    <a href="page_general_faq.html" class="nav-link ">
-                                        <i class="icon-wrench"></i> FAQ </a>
-                                </li>
-                                <li class=" ">
-                                    <a href="page_general_blog.html" class="nav-link ">
-                                        <i class="icon-pencil"></i> Blog </a>
-                                </li>
-                                <li class=" ">
-                                    <a href="page_general_blog_post.html" class="nav-link ">
-                                        <i class="icon-note"></i> Blog Post </a>
-                                </li>
-                                <li class=" ">
-                                    <a href="page_general_invoice.html" class="nav-link ">
-                                        <i class="icon-envelope"></i> Invoice </a>
-                                </li>
-                                <li class=" ">
-                                    <a href="page_general_invoice_2.html" class="nav-link ">
-                                        <i class="icon-envelope"></i> Invoice 2 </a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="dropdown-submenu ">
-                            <a href="javascript:;" class="nav-link nav-toggle ">
-                                <i class="icon-settings"></i> System
-                                <span class="arrow"></span>
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li class=" ">
-                                    <a href="page_system_coming_soon.html" class="nav-link " target="_blank"> Coming Soon </a>
-                                </li>
-                                <li class=" ">
-                                    <a href="page_system_404_1.html" class="nav-link "> 404 Page 1 </a>
-                                </li>
-                                <li class=" ">
-                                    <a href="page_system_404_2.html" class="nav-link " target="_blank"> 404 Page 2 </a>
-                                </li>
-                                <li class=" ">
-                                    <a href="page_system_404_3.html" class="nav-link " target="_blank"> 404 Page 3 </a>
-                                </li>
-                                <li class=" ">
-                                    <a href="page_system_500_1.html" class="nav-link "> 500 Page 1 </a>
-                                </li>
-                                <li class=" ">
-                                    <a href="page_system_500_2.html" class="nav-link " target="_blank"> 500 Page 2 </a>
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
+
+                <li>
+                    <a href="{{ route('zk.attendance') }}">ZKSoftware</a>
                 </li>
             </ul>
         </div>
