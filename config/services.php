@@ -14,6 +14,23 @@ return [
     |
     */
 
+    'google' => [
+        'app_name' => '4Impact',
+        'client_id' => '735827266341-giv0n5n4uojstabgncn13gpcp3toa2k7.apps.googleusercontent.com',
+        'client_secret' => 'iPQZOdyecVPxhkQjU6kZoS63',
+        'redirect' => '/auth/google/callback',
+        'scopes' => [
+            'https://www.googleapis.com/auth/userinfo.email',
+            'https://www.googleapis.com/auth/userinfo.profile',
+        ]
+    ],
+
+    'facebook' => [
+        'client_id' => '187538478494184',
+        'client_secret' => '5f5212305df386367e124fb6fa9c9916',
+        'redirect' => '/auth/facebook/callback'
+    ],
+
     'mailgun' => [
         'domain' => env('MAILGUN_DOMAIN'),
         'secret' => env('MAILGUN_SECRET'),

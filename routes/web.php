@@ -12,9 +12,15 @@
 */
 
 Route::get('/', function () {
-    return view('layouts.auth.backend');
+
+    if (Auth::check()) {
+        return response('Fuck you!!', 403);
+    }
+
+    return view('auth.login');
 });
 
+//https://github.com/laravel/framework/blob/5.3/src/Illuminate/Routing/Router.php
 Auth::routes();
 
 Route::group(['middleware' => ['auth']], function () {

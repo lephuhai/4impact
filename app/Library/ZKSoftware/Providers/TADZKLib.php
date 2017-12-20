@@ -64,6 +64,7 @@ class TADZKLib
     const CMD_CLEAR_ADMIN = 20;
     const CMD_SET_USER = 8;
     const CMD_GET_FREE_SIZES = 50;
+    const CMD_TESTVOICE = 1017;
 
     const EMPTY_STRING = '';
     const CUSTOMIZED_COMMAND_STRING = null;
@@ -187,6 +188,12 @@ class TADZKLib
         ],
         'get_firmware_version' => [
             'command_id' => self::CMD_VERSION,
+            'command_string' => self::EMPTY_STRING,
+            'should_disconnect' => true,
+            'result_filter_string'=>false
+        ],
+        'test_voice' => [
+            'command_id' => self::CMD_TESTVOICE,
             'command_string' => self::EMPTY_STRING,
             'should_disconnect' => true,
             'result_filter_string'=>false
@@ -561,7 +568,10 @@ class TADZKLib
      * Builds a command response with a XML format to keep TAD behavior.
      *
      * @param string $command command executed.
+     * @param $result_code
      * @param mixed $result command result.
+     * @param $encoding
+     * @param bool $result_filter_string
      * @return string XML response.
      */
     private function build_command_response($command, $result_code, $result, $encoding, $result_filter_string=false)

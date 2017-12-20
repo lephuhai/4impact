@@ -433,8 +433,8 @@ class TAD
      * Tells if the arguments supplied are in valid args set.
      *
      * @param array $args args array to be verified.
-     * @return <b><code>true</code></b> if all args supplied are valid (known by the class).
-     * @throws TAD\Exceptions\UnrecognizedArgument
+     * @return bool <b><code>true</code></b> if all args supplied are valid (known by the class).
+     * @throws UnrecognizedArgument
      */
     private function check_for_unrecognized_args(array $args)
     {
