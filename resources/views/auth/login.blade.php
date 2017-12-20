@@ -7,7 +7,7 @@
     <meta content="#1 Toools for social listening and data visualization" />
     <meta content="machine" name="author" />
 
-    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=all" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=all" rel="stylesheet" type="text/css" />
     <link href="/assets/global/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
     <link href="/assets/global/plugins/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" type="text/css" />
     <link href="/assets/global/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
@@ -32,6 +32,7 @@
             background-image: url("/img/bg-hulk.jpg");
             background-size: cover;
             background-repeat: no-repeat;
+            border-right: 1px solid;
         }
 
         .forget-password {
@@ -50,6 +51,7 @@
             background-color: brown;
             text-decoration: none;
             border-radius: 2px;
+            box-shadow: rgba(0, 0, 0, 0.26) 0 2px 5px !important;
         }
 
         h1 {
@@ -105,7 +107,7 @@
                     <div class="row">
                         <div class="col-sm-4">
                             <label class="rememberme mt-checkbox mt-checkbox-outline">
-                                <input type="checkbox" name="remember" {{ old('remember') ? 'checked' : '' }}> Remember Me
+                                <input type="checkbox" name="remember" {{ old('remember') ? 'checked' : '' }}> <i class="fa fa-info-circle" aria-hidden="true"></i> Remember me
                                 <span></span>
                             </label>
                         </div>
@@ -113,18 +115,18 @@
                             <div class="forgot-password">
                                 <a href="javascript:;" id="forget-password" class="forget-password">Forgot Password?</a>
                             </div>
-                            <button class="btn blue" type="submit">Sign In</button>
+                            <button class="btn blue" type="submit">Sign In <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></button>
                         </div>
                     </div>
                     <hr>
                     <div class="row">
                         <div class="col-sm-12">
-                            <a typeof="button" class="btn red-sunglo"><i class="fa fa-google"></i> Login with Google</a>
+                            <a typeof="button" class="btn red-sunglo"><i class="fa fa-google" aria-hidden="true"></i> Login with Google</a>
                         </div>
                     </div>
                 </form>
                 <!-- BEGIN FORGOT PASSWORD FORM -->
-                <form class="forget-form" action="{{ route('password.request') }}" method="post">
+                <form class="forget-form" action="{{ route('password.email') }}" method="post">
                     {{ csrf_field() }}
 
                     <h3>Forgot Password ?</h3>
@@ -132,8 +134,8 @@
                     <div class="form-group">
                         <input class="form-control placeholder-no-fix" type="text" autocomplete="off" placeholder="Email" name="email" /> </div>
                     <div class="form-actions">
-                        <button type="button" id="back-btn" class="btn blue btn-outline">Back</button>
-                        <button type="submit" class="btn blue uppercase pull-right">Submit</button>
+                        <button type="button" id="back-btn" class="btn blue btn-outline"><i class="fa fa-arrow-left" aria-hidden="true"></i> Back</button>
+                        <button type="submit" class="btn blue uppercase pull-right"> Submit</button>
                     </div>
                 </form>
                 <!-- END FORGOT PASSWORD FORM -->
@@ -144,17 +146,17 @@
                         <ul class="login-social">
                             <li>
                                 <a href="javascript:;">
-                                    <i class="icon-social-facebook"></i>
+                                    <i class="icon-social-facebook" aria-hidden="true"></i>
                                 </a>
                             </li>
                             <li>
                                 <a href="javascript:;">
-                                    <i class="icon-social-twitter"></i>
+                                    <i class="icon-social-twitter" aria-hidden="true"></i>
                                 </a>
                             </li>
                             <li>
                                 <a href="javascript:;">
-                                    <i class="icon-social-youtube"></i>
+                                    <i class="icon-social-youtube" aria-hidden="true"></i>
                                 </a>
                             </li>
                         </ul>
