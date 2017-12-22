@@ -179,6 +179,7 @@ return [
 
         Barryvdh\Debugbar\ServiceProvider::class,
         Jenssegers\Mongodb\MongodbServiceProvider::class,
+        Laravel\Socialite\SocialiteServiceProvider::class,
 
     ],
 
@@ -230,6 +231,7 @@ return [
         'View' => Illuminate\Support\Facades\View::class,
 
         'Debugbar' => Barryvdh\Debugbar\Facade::class,
+        'Socialize' => Laravel\Socialite\Facades\Socialite::class,
     ],
 
 ];

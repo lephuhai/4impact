@@ -44,7 +44,7 @@
             </div>
             <div class="col-md-3 col-sm-6 col-xs-12 footer-block">
                 <h2>Contacts</h2>
-                <address class="margin-bottom-40"> Phone: 096.329.6583
+                <address class="margin-bottom-40"> Phone: (+84) 96.329.6583
                     <br> Email:
                     <a href="mailto:machine@aboutme.vn">machine@aboutme.vn</a>
                 </address>

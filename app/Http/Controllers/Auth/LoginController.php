@@ -3,7 +3,10 @@
 namespace App\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
+use App\User;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
+use Illuminate\Support\Facades\Auth;
+use Socialize;
 
 class LoginController extends Controller
 {
@@ -34,5 +37,39 @@ class LoginController extends Controller
     public function __construct()
     {
         $this->middleware('guest')->except('logout');
+    }
+
+    public function redirectToProvider($provider) {
+
+        return Socialize::driver($provider)->redirect();
+    }
+
+    public function handleProviderCallback($provider) {
+
+        $user = Socialize::driver($provider)->user();
+
+        $authUser = $this->findOrCreateUser($user, $provider);
+
+        if (!$authUser) {
+            return redirect(route('register'))->with([
+                'name' => $user->name,
+                'email' => $user->email,
+                'avatar' => $user->avatar_original
+            ]);
+        }
+
+        Auth::loginUsingId($authUser->id, true);
+
+        return redirect($this->redirectTo);
+    }
+
+    public function findOrCreateUser($user, $provider) {
+
+        $authUser = User::query()->where('email', $user->email)->first();
+        if ($authUser) {
+            return $authUser;
+        }
+
+        return false;
     }
 }

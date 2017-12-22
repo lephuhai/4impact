@@ -119,7 +119,7 @@
                 <!-- BEGIN TODO DROPDOWN -->
                 <li class="dropdown dropdown-extended dropdown-tasks dropdown-dark" id="header_task_bar">
                     <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
-                        <i class="icon-calendar"></i>
+                        <i class="icon-envelope-open"></i>
                         <span class="badge badge-default">3</span>
                     </a>
                     <ul class="dropdown-menu extended tasks">
@@ -311,24 +311,8 @@
                     </a>
                     <ul class="dropdown-menu dropdown-menu-default">
                         <li>
-                            <a href="#">
+                            <a href="{{ route('profile.account') }}">
                                 <i class="icon-user"></i> My Profile </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <i class="icon-calendar"></i> My Calendar </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <i class="icon-envelope-open"></i> My Inbox
-                                <span class="badge badge-danger"> 3 </span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <i class="icon-rocket"></i> My Tasks
-                                <span class="badge badge-success"> 7 </span>
-                            </a>
                         </li>
                         <li class="divider"> </li>
                         <li>

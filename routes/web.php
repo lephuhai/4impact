@@ -27,6 +27,15 @@ Route::group(['middleware' => ['auth']], function () {
 
     Route::get('dashboard', 'DashboardController@index')->name('dashboard.index');
 
+    Route::group(['prefix' => 'account'], function() {
+
+        Route::any('', 'ProfileController@account')->name('profile.account');
+        Route::any('password', 'ProfileController@password')->name('profile.password');
+        Route::any('social_profiles', 'ProfileController@social_profiles')->name('profile.social_profiles');
+        Route::any('notifications', 'ProfileController@notifications')->name('profile.notifications');
+        Route::any('sessions', 'ProfileController@sessions')->name('profile.sessions');
+    });
+
     Route::group(['prefix' => 'github'], function () {
 
         Route::any('search', 'GitHubController@search')->name('github.search');

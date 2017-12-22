@@ -66,27 +66,6 @@
                                             <li>
                                                 <a href="ui_confirmations.html"> Popover Confirmations </a>
                                             </li>
-                                            <li>
-                                                <a href="ui_sweetalert.html"> Bootstrap Sweet Alerts </a>
-                                            </li>
-                                            <li>
-                                                <a href="ui_icons.html"> Font Icons </a>
-                                            </li>
-                                            <li>
-                                                <a href="ui_socicons.html"> Social Icons </a>
-                                            </li>
-                                            <li>
-                                                <a href="ui_typography.html"> Typography </a>
-                                            </li>
-                                            <li>
-                                                <a href="ui_tabs_accordions_navs.html"> Tabs, Accordions & Navs </a>
-                                            </li>
-                                            <li>
-                                                <a href="ui_tree.html"> Tree View </a>
-                                            </li>
-                                            <li>
-                                                <a href="maps_google.html"> Google Maps </a>
-                                            </li>
                                         </ul>
                                     </div>
                                     <div class="col-md-4">
@@ -109,21 +88,6 @@
                                             <li>
                                                 <a href="ui_page_progress_style_2.html"> Page Progress Bar - Big Counter </a>
                                             </li>
-                                            <li>
-                                                <a href="ui_blockui.html"> Block UI </a>
-                                            </li>
-                                            <li>
-                                                <a href="ui_bootstrap_growl.html"> Bootstrap Growl Notifications </a>
-                                            </li>
-                                            <li>
-                                                <a href="ui_notific8.html"> Notific8 Notifications </a>
-                                            </li>
-                                            <li>
-                                                <a href="ui_toastr.html"> Toastr Notifications </a>
-                                            </li>
-                                            <li>
-                                                <a href="ui_bootbox.html"> Bootbox Dialogs </a>
-                                            </li>
                                         </ul>
                                     </div>
                                     <div class="col-md-4">
@@ -139,18 +103,6 @@
                                             </li>
                                             <li>
                                                 <a href="ui_modals.html"> Modals </a>
-                                            </li>
-                                            <li>
-                                                <a href="ui_extended_modals.html"> Extended Modals </a>
-                                            </li>
-                                            <li>
-                                                <a href="ui_tiles.html"> Tiles </a>
-                                            </li>
-                                            <li>
-                                                <a href="ui_datepaginator.html"> Date Paginator </a>
-                                            </li>
-                                            <li>
-                                                <a href="ui_nestable.html"> Nestable List </a>
                                             </li>
                                         </ul>
                                     </div>
@@ -172,7 +124,7 @@
                         </li>
                     </ul>
                 </li>
-                <li class="menu-dropdown mega-menu-dropdown  mega-menu-full">
+                <li class="menu-dropdown mega-menu-dropdown mega-menu-full">
                     <a href="javascript:;"> Toools
                         <i class="fa fa-angle-down"></i>
                     </a>
@@ -240,6 +192,29 @@
                         </li>
                     </ul>
                 </li>
+                <li class="menu-dropdown mega-menu-dropdown mega-menu-full">
+                    <a href="javascript:;"> Hack Around
+                        <i class="fa fa-angle-down"></i>
+                    </a>
+                    <ul class="dropdown-menu" style="min-width: ">
+                        <li>
+                            <div class="mega-menu-content">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <ul class="mega-menu-submenu">
+                                            <li>
+                                                <h3>EWAY</h3>
+                                            </li>
+                                            <li>
+                                                <a href="{{ route('github.search') }}"> Fingerprints</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
                 <li class="menu-dropdown classic-menu-dropdown ">
                     <a href="javascript:;"> More
                         <i class="fa fa-angle-down"></i>
@@ -265,37 +240,6 @@
                                 <li class=" ">
                                     <a href="form_validation_states_md.html" class="nav-link "> Material Design
                                         <br>Form Validation States </a>
-                                </li>
-                                <li class=" ">
-                                    <a href="form_validation_md.html" class="nav-link "> Material Design
-                                        <br>Form Validation </a>
-                                </li>
-                                <li class=" ">
-                                    <a href="form_layouts.html" class="nav-link "> Form Layouts </a>
-                                </li>
-                                <li class=" ">
-                                    <a href="form_repeater.html" class="nav-link "> Form Repeater </a>
-                                </li>
-                                <li class=" ">
-                                    <a href="form_input_mask.html" class="nav-link "> Form Input Mask </a>
-                                </li>
-                                <li class=" ">
-                                    <a href="form_editable.html" class="nav-link "> Form X-editable </a>
-                                </li>
-                                <li class=" ">
-                                    <a href="form_wizard.html" class="nav-link "> Form Wizard </a>
-                                </li>
-                                <li class=" ">
-                                    <a href="form_icheck.html" class="nav-link "> iCheck Controls </a>
-                                </li>
-                                <li class=" ">
-                                    <a href="form_image_crop.html" class="nav-link "> Image Cropping </a>
-                                </li>
-                                <li class=" ">
-                                    <a href="form_fileupload.html" class="nav-link "> Multiple File Upload </a>
-                                </li>
-                                <li class=" ">
-                                    <a href="form_dropzone.html" class="nav-link "> Dropzone File Upload </a>
                                 </li>
                             </ul>
                         </li>
@@ -351,10 +295,6 @@
                             </ul>
                         </li>
                     </ul>
-                </li>
-
-                <li>
-                    <a href="{{ route('zk.attendance') }}">ZKSoftware</a>
                 </li>
             </ul>
         </div>
