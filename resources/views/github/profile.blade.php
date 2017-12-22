@@ -25,69 +25,71 @@
 
 @section('content')
 
-    <div class="page-content-inner">
+    <div class="container-fluid">
+        <div class="page-content-inner">
 
-        <div class="portlet light portlet-fit">
-            <div class="portlet-title">
-                <div class="caption">
-                    <i class="fa fa-github"></i>
-                    <span class="caption-subject  bold uppercase">GitHub</span>
+            <div class="portlet light portlet-fit">
+                <div class="portlet-title">
+                    <div class="caption">
+                        <i class="fa fa-github"></i>
+                        <span class="caption-subject  bold uppercase">GitHub</span>
+                    </div>
                 </div>
-            </div>
 
-            <div class="portlet-body">
-                <div class="row">
-                    <div class="col-md-2">
-                        <img src="https://avatars2.githubusercontent.com/u/7351351?s=460&v=4" class="img-responsive rounded-3 github-avatar">
-                        <select id="score-rate" title="Rating" autocomplete="off">
-                            <option value="1" data-html="Normal">1</option>
-                            <option value="2" data-html="Medium">2</option>
-                            <option value="3" data-html="Good">3</option>
-                            <option value="4" data-html="Better">4</option>
-                            <option value="5" data-html="Best">5</option>
-                        </select>
-                    </div>
-                    <div class="col-md-3">
-                        <ul class="list-group">
-                            <li class="list-group-item"><i class="fa fa-user"></i> haipc (Hai Le Phu) <span class="badge">12</span></li>
-                            <li class="list-group-item"><i class="fa fa-fw fa-database"></i> 39 public repos</li>
-                            <li class="list-group-item"><i class="fa fa-fw fa-clock-o"></i> Joined GitHub 6 years ago</li>
-                            <li class="list-group-item"><i class="fa fa-fw fa-building"></i> Eway.,JSC</li>
-                            <li class="list-group-item"><i class="fa fa-fw fa-external-link"></i> <a
-                                        href="https://github.com/haipc" target="_blank">View profile on GitHub</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-md-7">
-                        <div class="col-md-12 text-right">
-                            <div class="btn-group" data-toggle="buttons">
-                                <label class="btn btn-sm btn-default" title="Overview">
-                                    <input type="radio" value="hourly" autocomplete="off"> Overview
-                                </label>
-                            </div>
-                            <div class="btn-group" data-toggle="buttons">
-                                <label class="btn btn-sm btn-default" title="Biểu đồ phân tích theo giờ">
-                                    <input type="radio" value="hourly" autocomplete="off"> Hourly
-                                </label>
-                                <label class="btn btn-sm btn-default active" title="Biểu đồ phân tích theo ngày">
-                                    <input type="radio" value="daily" autocomplete="off" checked=""> Daily
-                                </label>
-                                <label class="btn btn-sm btn-default" title="Biểu đồ phân tích theo tháng">
-                                    <input type="radio" value="daily" autocomplete="off"> Month
-                                </label>
-                                <label class="btn btn-sm btn-default" title="Biểu đồ phân tích theo năm">
-                                    <input type="radio" value="daily" autocomplete="off"> Year
-                                </label>
-
-                            </div>
+                <div class="portlet-body">
+                    <div class="row">
+                        <div class="col-md-2">
+                            <img src="https://avatars2.githubusercontent.com/u/7351351?s=460&v=4" class="img-responsive rounded-3 github-avatar">
+                            <select id="score-rate" title="Rating" autocomplete="off">
+                                <option value="1" data-html="Normal">1</option>
+                                <option value="2" data-html="Medium">2</option>
+                                <option value="3" data-html="Good">3</option>
+                                <option value="4" data-html="Better">4</option>
+                                <option value="5" data-html="Best">5</option>
+                            </select>
                         </div>
-                        <div id="commit-chart" style="min-width: 310px; height: 250px; margin: 0 auto; padding-top: 50px;"></div>
+                        <div class="col-md-3">
+                            <ul class="list-group">
+                                <li class="list-group-item"><i class="fa fa-user"></i> haipc (Hai Le Phu) <span class="badge">12</span></li>
+                                <li class="list-group-item"><i class="fa fa-fw fa-database"></i> 39 public repos</li>
+                                <li class="list-group-item"><i class="fa fa-fw fa-clock-o"></i> Joined GitHub 6 years ago</li>
+                                <li class="list-group-item"><i class="fa fa-fw fa-building"></i> Eway.,JSC</li>
+                                <li class="list-group-item"><i class="fa fa-fw fa-external-link"></i> <a
+                                            href="https://github.com/haipc" target="_blank">View profile on GitHub</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-7">
+                            <div class="col-md-12 text-right">
+                                <div class="btn-group" data-toggle="buttons">
+                                    <label class="btn btn-sm btn-default" title="Overview">
+                                        <input type="radio" value="hourly" autocomplete="off"> Overview
+                                    </label>
+                                </div>
+                                <div class="btn-group" data-toggle="buttons">
+                                    <label class="btn btn-sm btn-default" title="Biểu đồ phân tích theo giờ">
+                                        <input type="radio" value="hourly" autocomplete="off"> Hourly
+                                    </label>
+                                    <label class="btn btn-sm btn-default active" title="Biểu đồ phân tích theo ngày">
+                                        <input type="radio" value="daily" autocomplete="off" checked=""> Daily
+                                    </label>
+                                    <label class="btn btn-sm btn-default" title="Biểu đồ phân tích theo tháng">
+                                        <input type="radio" value="daily" autocomplete="off"> Month
+                                    </label>
+                                    <label class="btn btn-sm btn-default" title="Biểu đồ phân tích theo năm">
+                                        <input type="radio" value="daily" autocomplete="off"> Year
+                                    </label>
+
+                                </div>
+                            </div>
+                            <div id="commit-chart" style="min-width: 310px; height: 250px; margin: 0 auto; padding-top: 50px;"></div>
+                        </div>
                     </div>
+                    <hr>
                 </div>
-                <hr>
             </div>
+
+
         </div>
-
-
     </div>
 
 @endsection

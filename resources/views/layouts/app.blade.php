@@ -192,13 +192,9 @@
                     <!-- END PAGE HEAD-->
                     <!-- BEGIN PAGE CONTENT BODY -->
                     <div class="page-content">
-                        <div class="container-fluid">
-                            <!-- BEGIN PAGE BREADCRUMBS -->
 
-                            @yield('content')
+                        @yield('content')
 
-                            <!-- END PAGE CONTENT INNER -->
-                        </div>
                     </div>
                     <!-- END PAGE CONTENT BODY -->
                     <!-- END CONTENT BODY -->

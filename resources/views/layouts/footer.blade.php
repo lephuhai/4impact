@@ -11,7 +11,7 @@
                 <div class="subscribe-form">
                     <form action="javascript:;">
                         <div class="input-group">
-                            <input type="text" placeholder="machine@aboutme.vn" class="form-control">
+                            <input type="text" placeholder="machine@aboutme.vn" class="form-control" value="" />
                         <span class="input-group-btn">
                             <button class="btn" type="submit">Submit</button>
                         </span>

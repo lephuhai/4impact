@@ -266,12 +266,12 @@ Page Header
         border: 1px solid #eaeaf2;
         border-top: 0; }
     .page-header .page-header-menu .search-form {
-      background: #38414c; }
+      background: #fff; }
       .page-header .page-header-menu .search-form .input-group {
-        background: #38414c; }
+        background: #fff; }
         .page-header .page-header-menu .search-form .input-group .form-control {
           color: #616d7d;
-          background: #38414c; }
+          background: #fff; }
           .page-header .page-header-menu .search-form .input-group .form-control::-moz-placeholder {
             color: #5f6a7a;
             opacity: 1; }

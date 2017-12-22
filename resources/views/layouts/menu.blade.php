@@ -19,27 +19,9 @@
         <div class="hor-menu  ">
             <ul class="nav navbar-nav">
                 <li class="menu-dropdown classic-menu-dropdown ">
-                    <a href="#"> Dashboard
+                    <a href="{{ route('dashboard.index') }}"> Dashboard
                         <span class="arrow"></span>
                     </a>
-                    <ul class="dropdown-menu pull-left">
-                        <li class=" ">
-                            <a href="index.html" class="nav-link  ">
-                                <i class="icon-bar-chart"></i> Default Dashboard
-                                <span class="badge badge-success">1</span>
-                            </a>
-                        </li>
-                        <li class=" ">
-                            <a href="dashboard_2.html" class="nav-link  ">
-                                <i class="icon-bulb"></i> Dashboard 2 </a>
-                        </li>
-                        <li class=" ">
-                            <a href="dashboard_3.html" class="nav-link  ">
-                                <i class="icon-graph"></i> Dashboard 3
-                                <span class="badge badge-danger">3</span>
-                            </a>
-                        </li>
-                    </ul>
                 </li>
                 <li class="menu-dropdown mega-menu-dropdown  ">
                     <a href="javascript:;"> Research
@@ -138,10 +120,11 @@
                                                 <h3>Online Research</h3>
                                             </li>
                                             <li>
-                                                <a href="{{ route('github.search') }}"> GitHub profile</a>
+                                                <a href="{{ route('github.search') }}">
+                                                    <i class="fa fa-github"></i> GitHub profile</a>
                                             </li>
                                             <li>
-                                                <a href="#"> Facebook All in One </a>
+                                                <a href="#"> <i class="icon-social-facebook"></i> Facebook All in One </a>
                                             </li>
                                         </ul>
                                     </div>
