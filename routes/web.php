@@ -23,7 +23,8 @@ Route::get('/', function () {
 //https://github.com/laravel/framework/blob/5.3/src/Illuminate/Routing/Router.php
 Auth::routes();
 
-Route::group(['middleware' => ['auth']], function () {
+// throttle Rate-limit: Nếu vượt quá 60 request trong 1 phút thì IP sẽ bị block 5 phút.
+Route::group(['middleware' => ['auth', 'throttle:60,5']], function () {
 
     Route::get('dashboard', 'DashboardController@index')->name('dashboard.index');
 
