@@ -2,7 +2,7 @@
 <div class="page-header-menu">
     <div class="container-fluid">
         <!-- BEGIN HEADER SEARCH BOX -->
-        <form class="search-form" action="page_general_search.html" method="GET">
+        <form class="search-form" method="GET">
             <div class="input-group">
                 <input type="text" class="form-control" placeholder="Search" name="query">
                 <span class="input-group-btn">
@@ -19,9 +19,7 @@
         <div class="hor-menu  ">
             <ul class="nav navbar-nav">
                 <li class="menu-dropdown classic-menu-dropdown ">
-                    <a href="{{ route('dashboard.index') }}"> Dashboard
-                        <span class="arrow"></span>
-                    </a>
+                    <a href="{{ route('dashboard.index') }}"> Dashboard</a>
                 </li>
                 <li class="menu-dropdown mega-menu-dropdown  ">
                     <a href="javascript:;"> Research
