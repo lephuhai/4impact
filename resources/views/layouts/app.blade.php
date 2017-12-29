@@ -215,7 +215,7 @@
     </div>
 </div>
 <!-- BEGIN QUICK NAV -->
-<nav class="quick-nav">
+<nav class="quick-nav" style="display: none;">
     <a class="quick-nav-trigger" href="#0">
         <span aria-hidden="true"></span>
     </a>
@@ -271,6 +271,7 @@
 <!-- END THEME LAYOUT SCRIPTS -->
 
 <script src="/assets/global/scripts/base.components.min.js"></script>
+<script crossorigin src="https://unpkg.com/react@0.13.3/dist/react.js"></script>
 
     <!-- Scripts -->
     {{--<script src="{{ asset('js/app.js') }}"></script>--}}

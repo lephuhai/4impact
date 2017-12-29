@@ -30,12 +30,12 @@ class ZKSoftware extends Controller
 //
 //        $dt = $tad->execute_command_via_tad_soap('get_date')->to_array();
 
-//        $dt = $tad->get_date(); // it work!!
+        $dt = $tad->get_date(); // it work!!
 
 //        $response = $tad->execute_command_via_zklib('test_voice');
 
         $logs = $tad->get_att_log(['pin' => 206]);
-        $logs = $logs->filter_by_date(['start'=>'2017-12-22', 'end'=>'2017-12-22'])->to_array();
+        $logs = $logs->filter_by_date(['start'=>'2017-12-28', 'end'=>'2017-12-29'])->to_array();
 //
 //        $userAttendance = collect($logs['Row'])->groupBy('PIN');
 //        $sorted = $userAttendance->sortBy('DateTime');
@@ -43,9 +43,10 @@ class ZKSoftware extends Controller
 //        $startDay = $sorted->first();
 //        $endDay = $sorted->last();
 //
-//        $s = $tad->execute_command_via_zklib('set_date', ['date'=>'2017-12-22', 'time'=>'08:10:00']);
+//        $s = $tad->execute_command_via_zklib('set_date', ['date'=>'2017-12-29', 'time'=>'07:05:00']);
+//        $s2 = $tad->execute_command_via_zklib('set_date', ['date'=>'2017-12-29', 'time'=>'10:23:00']);
 
-//        $response = $tad->execute_command_via_tad_soap('set_date', ['time'=>'08:17:15']);
+//        $response = $tad->execute_command_via_tad_soap('set_date', ['time'=>'07:17:15']);
 
         return response($logs, 200);
 

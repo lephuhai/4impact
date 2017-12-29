@@ -1,277 +1,152 @@
-@extends('layouts.app')
+@extends('layouts.dashboard.app')
 
 @section('styles')
+
+    @parent
+
     <style>
-        .page-head {
-            border-bottom: 1px solid #d5cfdb;
-            box-shadow: 0 2px 0 rgba(0, 0, 0, .03);
+
+        .activity-container {
             position: relative;
+            margin-bottom: 0;
         }
 
-        .page-content {
-            padding: 0;
-        }
-
-        .portlet.light.portlet-fit > .portlet-body {
-            padding: 30px 20px 20px;
-        }
-
-        .organization-home .nav-header {
-            padding: 0 0 10px;
-            margin: 0;
-        }
-
-        .organization-home .nav-header.with-divider {
-            border-top: 1px solid #e2dee6;
-            padding-top: 30px;
-        }
-
-        .nav-header {
-            margin-bottom: 8px;
-            text-transform: uppercase;
-            font-size: 12px;
-            color: #968ba0;
-            font-weight: 600;
-            line-height: 1;
-        }
-
-        .nav {
-            /*margin-bottom: 20px;*/
-            padding-left: 0;
-            list-style: none;
-        }
-
-        .nav-stacked {
-            margin-bottom: 20px;
-        }
-
-        .nav-stacked li {
-            margin-bottom: 6px;
-        }
-
-        .nav-stacked > li {
-            float: none;
-        }
-
-        .nav > li, .nav > li > a {
-            position: relative;
-            display: block;
-        }
-
-        .nav-stacked li.active a, .nav-stacked li.active a:hover {
-            border: 0;
-            background: none;
-            color: #343c45;
-            font-weight: 600;
-        }
-
-        .nav-stacked > li + li {
-            margin-top: 2px;
-            margin-left: 0;
-        }
-
-        .nav-stacked li {
-            margin-bottom: 6px;
-        }
-
-        .nav-stacked > li {
-            float: none;
-        }
-
-        .nav-stacked li > a:active, .nav-stacked li > a:focus, .nav-stacked li > a:hover {
-            background: none;
-            color: #161319;
-        }
-
-        .nav > li, .nav > li > a {
-            position: relative;
-            display: block;
-        }
-
-        .nav-stacked li > a {
-            font-size: 14px;
-            line-height: 1.5;
-            padding: 0;
-            margin: 4px 0;
-            display: block;
-            border: 0;
-            background: none;
-            color: #493e54;
-            position: relative;
-        }
-
-        /*.org-sidebar .nav-stacked li.active a:after {*/
-        /*left: -30px;*/
-        /*}*/
-        .nav-stacked li.active a:after, .nav-stacked li.active a:focus:after, .nav-stacked li.active a:hover:after {
-            position: absolute;
-            display: block;
-            content: "";
-            top: 2px;
-            bottom: 3px;
-            left: -15px;
-            width: 4px;
-            background: #6c5fc7;
-        }
-
-        .organization-home .box, .organization-home .issue-list {
-            margin-bottom: 25px;
-        }
-
-        .box.empty {
-            padding: 20px;
-            text-align: center;
-        }
-
-        .box {
+        .organization-home .activity {
             background: #fff;
             border: 1px solid #e2dee6;
             border-radius: 3px;
             margin: 0 0 20px;
-            box-shadow: 0 1px 0 rgba(0, 0, 0, .03);
+            box-shadow: 0 1px 0 rgba(0,0,0,.03);
         }
 
-        h4 {
-            font-size: 22px;
+        .activity-container>ul {
+            padding-left: 0;
+            list-style: none;
+            margin-bottom: 0;
         }
 
-        h1, h2, h3, h4, h5, h6 {
-            margin: 0 0 20px;
-            font-weight: 600;
-            line-height: 1;
+        .organization-home .activity .activity-item {
+            margin: 0;
+            padding: 10px 15px 10px 60px;
+            border-bottom: 1px solid #efecf1;
+            line-height: 1.4;
+            font-size: 15px;
         }
 
-        .btn-default {
-            color: #493e54;
-            background: #fff;
-            font-weight: 600;
-            background-image: -webkit-linear-gradient(top, #fff, #fcfbfc);
-            background-image: -o-linear-gradient(top, #fff 0, #fcfbfc 100%);
-            background-image: linear-gradient(180deg, #fff 0, #fcfbfc);
-            background-repeat: repeat-x;
-            border-color: #c1b8ca;
-            box-shadow: 0 2px 0 rgba(0, 0, 0, .03);
-        }
-
-        .btn-group-sm > .btn, .btn-sm {
-            font-size: 12px;
-            padding: 4px 9px;
-        }
-
-        .btn-sm .icon-refresh {
+        .activity-container>ul .activity-item {
             position: relative;
-            font-size: 14px;
-            font-weight: bold;
-            top: 2px;
+            font-size: 13px;
+            color: #493e54;
         }
 
-        .btn-sidebar-header {
-            float: right;
-            font-size: 12px;
-            color: #625471;
+        .organization-home .activity .activity-item .activity-item-content {
+            display: block;
+            padding: 0;
+        }
+
+        .organization-home .activity .activity-item .avatar {
+            position: absolute;
+            width: 36px;
+            height: 36px;
+            left: 12px;
+            top: 12px;
+        }
+
+        .activity-container>ul .activity-item .activity-author {
             font-weight: 600;
-            line-height: 1em;
+            color: #2f2936;
         }
 
-        a, a:hover {
-            text-decoration: none;
-            -webkit-transition: color .2s linear;
-            -o-transition: color linear .2s;
-            transition: color .2s linear;
+        .organization-home .activity .activity-item .activity-meta {
+            color: #625471;
+            font-size: 85%;
         }
 
-        a:hover {
-            color: #315cac;
+        .organization-home .activity .activity-item .project {
+            font-weight: 600;
         }
 
-        .iframe-trends {
-            border: 1px solid #e2dee6;
-            box-shadow: 0 1px 0 rgba(0, 0, 0, .03)
+        .organization-home .activity .activity-item .activity-meta a {
+            color: #625471;
         }
-
     </style>
+
 @endsection
 
-@section('content')
-    <!-- END PAGE BREADCRUMBS -->
-    <!-- BEGIN PAGE CONTENT INNER -->
-    <div class="page-content-inner organization-home">
-        <div class="portlet light portlet-fit ">
-            <div class="portlet-body">
-                <div class="row">
-                    <div class="col-md-2 org-sidebar">
-                        <section>
-                            <h6 class="nav-header">Organization</h6>
-                            <ul class="nav nav-stacked">
-                                <li @if(Route::currentRouteName() == 'dashboard.index') class="active" @endif>
-                                    <a href="{{ route('dashboard.index') }}">Dashboard</a>
-                                </li>
-                                <li>
-                                    <a href="#">Projects &amp; Teams</a>
-                                </li>
-                                <li>
-                                    <a href="#">Stats</a>
-                                </li>
-                            </ul>
-                        </section>
-                        <section>
-                            <h6 class="nav-header with-divider">Issues</h6>
-                            <ul class="nav nav-stacked">
-                                <li @if(Route::currentRouteName() == 'dashboard.index') class="active" @endif>
-                                    <a href="{{ route('dashboard.index') }}">Dashboard</a>
-                                </li>
-                                <li class="">
-                                    <a href="#">Projects &amp; Teams</a>
-                                </li>
-                                <li class="">
-                                    <a href="#">Stats</a>
-                                </li>
-                            </ul>
-                        </section>
+@section('dashboard_content')
 
-                        <section>
-                            <h6 class="nav-header with-divider">Manage</h6>
-                            <ul class="nav nav-stacked">
-                                <li>
-                                    <a href="{{ route('dashboard.index') }}">Revenue</a>
-                                </li>
-                            </ul>
-                        </section>
-                    </div>
-                    <div class="col-md-7">
-                        <section>
-                            <div class="pull-right">
-                                <a class="btn btn-sm btn-default" href="#">View more</a>
-                                <a class="btn btn-sm btn-default" style="margin-left: 5px;">
-                                    <span class="icon icon-refresh"></span>
-                                </a>
-                            </div>
-                            <h4>Assigned to me</h4>
-                            <div class="box empty">No issues have been assigned to you.</div>
-
-
-                        </section>
-                    </div>
-                    <div class="col-md-3">
-                        <section>
-                            <a class="btn-sidebar-header" href="#">View Stats</a>
-                            <h6 class="nav-header">EVENTS PER HOUR</h6>
-                        </section>
-
-                        <section>
-                            <h6 class="nav-header with-divider">Google Search Trends
-                                <a onclick="reloadIframe()" class="btn btn-sm btn-default pull-right" style="margin-top: -11px">
-                                    <span class="icon icon-refresh"></span>
-                                </a>
-                            </h6>
-                            <iframe scrolling="no" class="iframe-trends" width="100%" height="413"
-                                    src="https://trends.google.com.vn/trends/hottrends/widget?pn=p28&amp;tn=10&amp;h=413">
-                            </iframe>
-                        </section>
-                    </div>
-                </div>
+    <div class="col-md-7">
+        <section>
+            <div class="pull-right">
+                <a class="btn btn-sm btn-default" href="#">View more</a>
+                <a class="btn btn-sm btn-default" style="margin-left: 5px;">
+                    <span class="icon icon-refresh"></span>
+                </a>
             </div>
-        </div>
+            <h4>Assigned to me</h4>
+            <div class="box empty">No issues have been assigned to you.</div>
+
+            {{--<div id="root"></div>--}}
+        </section>
+
+        <section>
+            <div class="pull-right">
+                <a class="btn btn-sm btn-default" href="#">View more</a>
+                <a class="btn btn-sm btn-default" style="margin-left: 5px;">
+                    <span class="icon icon-refresh"></span>
+                </a>
+            </div>
+            <h4>Recent activity</h4>
+            <div class="activity-container">
+                <ul class="activity">
+                    @for($i = 0; $i< 5; $i++)
+                        <li class="activity-item activity-item-compact">
+                            <div class="activity-item-content">
+                            <span>
+                                <span>
+                                    <span class="avatar">
+                                        <svg viewBox="0 0 120 120">
+                                            <rect x="0" y="0" width="120" height="120" rx="15" ry="15" fill="#e63717"></rect>
+                                            <text x="50%" y="50%" font-size="65" text-anchor="middle" fill="#FFFFFF" style="dominant-baseline: central;">H</text>
+                                        </svg>
+                                    </span>
+                                    <span class="activity-author">hailp@eway.vn</span>
+                                </span>
+                                <span> assigned </span>
+                                <span style="position: relative;">
+                                    <a href="#">MASOFFER-LINK-TW</a>
+                                </span>
+                                <span> to themselves</span>
+                            </span>
+                                <div class="activity-meta">
+                                    <a class="project" href="#">masoffer-link</a>
+                                    <span class="bullet"></span>
+                                    <time datetime="2017-12-23T15:51:05.592Z" title="December 23, 2017 3:51 PM UTC">17 hours ago </time>
+                                </div>
+                            </div>
+                        </li>
+                    @endfor
+                </ul>
+            </div>
+
+        </section>
+    </div>
+    <div class="col-md-3">
+        <section>
+            <a class="btn-sidebar-header" href="#">View Stats</a>
+            <h6 class="nav-header">EVENTS PER HOUR</h6>
+        </section>
+
+        <section>
+            <h6 class="nav-header with-divider">Google Search Trends
+                <a onclick="reloadIframe()" class="btn btn-sm btn-default pull-right" style="margin-top: -11px">
+                    <span class="icon icon-refresh"></span>
+                </a>
+            </h6>
+            <iframe scrolling="no" class="iframe-trends" width="100%" height="413"
+                    src="https://trends.google.com.vn/trends/hottrends/widget?pn=p28&amp;tn=10&amp;h=413">
+            </iframe>
+        </section>
     </div>
 
 @endsection
@@ -285,6 +160,28 @@
         function reloadIframe() {
             $iframe.attr('src', $iframe.attr('src'));
         }
-    </script>
-@endsection
 
+        // var iframeElement = React.createElement(
+        //     'iframe',
+        //     {
+        //         scrolling: 'no',
+        //         className: 'iframe-trends',
+        //         width: '100%',
+        //         height: '413',
+        //         src: "https://trends.google.com.vn/trends/hottrends/widget?pn=p28&amp;tn=10&amp;h=413"
+        //     }
+        // );
+
+        // var element = React.createElement(
+        //     'h1',
+        //     null,
+        //     'Hello, ',
+        //     "Hai Le Phu",
+        //     '!'
+        // );
+        //
+        // React.render(element, document.getElementById('root'));
+
+    </script>
+
+@endsection

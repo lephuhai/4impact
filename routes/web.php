@@ -28,6 +28,11 @@ Route::group(['middleware' => ['auth', 'throttle:60,5']], function () {
 
     Route::get('dashboard', 'DashboardController@index')->name('dashboard.index');
 
+    Route::group(['prefix' => 'manage'], function() {
+
+        Route::any('revenue', 'DashboardController@manage_revenue')->name('manage.revenue');
+    });
+
     Route::group(['prefix' => 'account'], function() {
 
         Route::any('', 'ProfileController@account')->name('profile.account');
