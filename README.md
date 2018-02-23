@@ -10,6 +10,13 @@ sudo chmod -R ug+rwx storage bootstrap/cache
 ```
 
 
+```
+ 1145  sudo apt-get install php5.6-soap
+ 1146  sudo apt-get install php-soap
+ 1147  sudo service apache2 restart
+```
+
+
 # Library
 
 1. ZKSoftware:

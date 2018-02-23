@@ -48,11 +48,31 @@ Route::group(['middleware' => ['auth', 'throttle:60,5']], function () {
 
     });
 
-    Route::group(['prefix' => 'zk'], function () {
 
-        Route::get('fight', 'ZKSoftware@fight')->name('zk.fight');
-        Route::get('attendance', 'ZKSoftware@attendance')->name('zk.attendance');
-    });
+});
+
+Route::group(['prefix' => 'zk'], function () {
+
+	Route::get('users', 'ZKSoftware@users')->name('zk.users');
+	Route::get('users/{PIN}', 'ZKSoftware@user')->name('zk.user');
+
+	Route::get('user/templates', 'ZKSoftware@finger_templates')->name('zk.templates');
+	Route::get('user/templates/{PIN}', 'ZKSoftware@finger_template')->name('zk.template');
+	Route::put('user/templates/{PIN}', 'ZKSoftware@finger_template');
+
+	Route::get('user/attendances', 'ZKSoftware@get_att_logs')->name('zk.attendances');
+	Route::get('user/attendances/{PIN}', 'ZKSoftware@get_att_log')->name('zk.attendance');
+
+	Route::get('algorithm', 'ZKSoftware@get_fingerprint_algorithm')->name('zk.algorithm');
+	Route::get('storage', 'ZKSoftware@get_free_size')->name('zk.storage');
+
+	Route::get('restart', 'ZKSoftware@restart');
+
+	Route::get('get_date', 'ZKSoftware@get_date');
+	Route::post('set_date/{date}/{time}', 'ZKSoftware@set_date');
+
+	Route::get('fight', 'ZKSoftware@fight')->name('zk.fight');
+	Route::get('attendance', 'ZKSoftware@attendance')->name('zk.attendance');
 });
 
 Route::get('/home', 'HomeController@index')->name('home');
